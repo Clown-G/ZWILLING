@@ -1,0 +1,564 @@
+.wrap{
+	width: 100%;
+	background: #f7f7f7;
+	// 头部
+	header{
+		width: 100%;
+		height:35px;				
+		font-size:12px;
+		position:fixed;
+		left:0px;
+		top:0px;
+		color:#fff;
+		z-index:99;
+		a{
+			color:#fff;
+		}
+		//	滚动条登录信息
+		.top{
+			background:#807c77;
+			line-height:35px;
+			div{
+				position: relative;
+				.scroll{
+					width: 100%;
+					height:35px;
+					overflow: hidden;
+					text-align: center;
+					a{
+						border-bottom: 1px solid #fff;
+						padding-bottom:1px;
+						margin: 0 10px;
+					}
+					p{
+						position: relative;
+					}
+				}
+				.login_info{
+					width: 300px;
+					position: absolute;
+					right:0px;
+					top:0px;
+					li{
+						width: 100px;
+						text-align: center;
+						float: left;
+						span{
+							width: 35px;
+							height:35px;
+							margin: 0px;
+							padding: 0px;
+						}					
+						a{
+							padding: 0 4px;
+						}				
+					}
+					.in{
+						a{
+							padding: 0px;
+						}
+					}
+				}
+			}
+			
+		}
+		//	导航条
+		nav{
+			width: 100%;
+			height:85px;		
+			background: #ffffff;			
+			.nav_search{
+				width: 45px;
+				height:24px;
+				padding:30px;
+				text-align:center;
+				>a{
+					height: 24px;
+					width: 24px;
+					float: left;
+					margin-left: 15px;			
+				}
+				.search_box{
+					display: none;
+					position: absolute;
+					top:85px;
+					left: 0;
+					width: 100vw;
+					background: rgba(255,255,255,0.5);
+					padding:5px 0px 30px 0px;					
+					div{
+						width:580px;
+						margin:0 auto;
+						p{
+							border-bottom:1px solid #837d78;
+							height:42px;							
+							margin-bottom:9px;
+							span{
+								height: 24px;
+								width: 24px;
+								margin-top: 9px;
+							}
+							span:nth-of-type(1){								
+								float: left;								
+							}
+							span:nth-of-type(2){
+								float: right;								
+							}
+							input{
+								width: 80%;
+								height: 40px;
+								line-height:40px;
+								color:#797777;
+								float: left;
+								background: none;
+								text-indent:1em;
+							}							
+						}
+						ul{
+							li{
+								line-height:32px;
+								text-align:left;
+								a{
+									color: #837d78;
+									font-size:14px;
+								}
+							}
+						}
+					}
+					
+				}
+			}
+			//	页面导航
+			.nav_list{
+				padding: 0px 20px;				
+				height:85px;
+				position:relative;
+				>li{
+					float:left;
+					padding:0px 24px;
+					line-height:79px;
+					&:nth-of-type(2){
+						>a{
+							position:relative;
+							&:after{
+								font-size:12px;
+								transform: scale(0.7);
+								content: 'ZWILLING';
+								position:absolute;
+								top:24px;
+								left:-6px;
+								line-height: 12px;
+								color: #999;
+							}
+						}
+					}
+					&:nth-of-type(3){
+						>a{
+							position:relative;
+							&:after{
+								font-size:12px;
+								transform: scale(0.7);
+								content: 'STAUB';
+								position:absolute;
+								top:24px;
+								left:-4px;
+								line-height: 12px;
+								color: #999;
+							}
+						}
+					}
+					&:nth-of-type(4){
+						>a{
+							position:relative;
+							&:after{
+								font-size:12px;
+								transform: scale(0.7);
+								content: 'BALLARINI';
+								position:absolute;
+								top:24px;
+								left:0px;
+								line-height: 12px;
+								color: #999;
+							}
+						}
+					}					
+					a{
+						color: #333;						
+						font-size:16px;						
+					}
+					&:after{
+						height: 4px;
+						width: 0%;
+						display: block;
+						content: '';
+						background: #ee1c25;
+						position: relative;
+						top:-10px;
+						transition: 0.5s;
+					}
+					&:hover{
+						&:after{
+							width: 100%;
+							transition: 0.5s;
+						}
+						>a{
+							color: #ee1c25;
+							&:after{
+								color: #ee1c25;
+							}
+						}
+						.nav_content{
+							display: block;
+						}
+					}
+					//导航下拉列表
+					.nav_content{						
+						position: fixed;
+						left: 0px;
+						top:120px;
+						background: #F7F7F7;
+						width: 100%;
+						border: 1px solid #ddd;
+						display: none;						
+						.con_list{
+							display: flex;
+							justify-content:center;
+							box-sizing:border-box;
+							padding:18px 20px 44px 20px;
+							margin: 0px;
+							li{
+								width:235px;
+								h4{
+									display: inline-block;
+									height: 55px;
+									line-height: 55px;
+									color: #333333;
+									border-radius:6px;
+									border-bottom:1px solid #e4e3e2;
+									span{
+										height:40px;
+										width:40px ;
+										float:left;
+										margin-right: 15px;
+										img{
+											vertical-align: middle;
+										}
+									}
+									a{
+										font-size:14px;
+									}
+								}
+								ul{									
+									li{
+										line-height: 31px;
+										padding:0;
+										a{
+											font-size:12px;
+											color: #807c77;											
+											&:after{
+												content: '';
+											}
+										}
+										&:last-child{
+											a{
+												text-decoration:underline;
+											}
+										}
+										img{
+											width:180px ;
+											height: 120px;
+											line-height: none;
+										}
+									}
+								}
+							}
+						}
+						.nav_con_bottom{
+							border-top:1px solid #e4e3e2;
+							p{
+								line-height: 53px;
+								text-align: center;
+								span{
+									width: 28px;
+									height: 28px;
+								}								
+								a{
+									font-size: 15px;
+									color: #000;
+								}
+								&:after{
+									position:absolute;
+									width:0px;
+									height: 0px;
+									bottom:20px;
+									content: '';
+									margin-left: 5px;
+									border: 8px solid transparent;
+									border-left-color: #000000;
+								}
+							}
+						}
+					}
+				}				
+				li:last-child{
+					img{
+						vertical-align: middle;
+					}
+					&:after{
+						display: none;
+					}
+				}
+				&:before{
+					position: absolute;
+					left:0px;
+					top:32px;
+					content: '';
+					display: inline-block;
+					width: 2px;
+					background: #dad9d9;
+					height: 20px;
+				}
+				&:after{
+					position: absolute;
+					right:0px;
+					top:32px;
+					content: '';
+					display: inline-block;
+					width: 2px;
+					background: #dad9d9;
+					height: 20px;
+				}
+			}
+			h1{
+				width: 50px;
+				height:60px;
+				padding:12px 35px;
+				a{	
+					float: left;
+					width: 50px;
+					height: 60px;
+					img{
+						vertical-align: top;
+					}					
+				}
+			}
+		}
+		
+	}
+	.content{
+		padding-top: 120px;			
+	}
+	//	页面底部
+	footer{
+		border-top:1px solid #e1e1e1;
+		.footer_help{
+			padding:45px 0 65px 0;
+			.help_left{
+				width: 570px;
+				border-right:1px solid #e1e1e1;
+				ul{
+					margin-left:60px;
+					width: 110px;
+					float: left;
+					h4{
+						height: 20px;
+						line-height: 20px;
+						margin: 12px 0px;
+						border-left:4px solid #EE1C25;
+						font-size: ;
+						color: #333333;
+						text-indent:12px;
+					}
+					li{
+						height:32px ;
+						line-height: 32px;
+						font-size:14px;
+						text-indent:12px;
+						a{
+							color: #807C77;
+						}
+					}
+				}
+			}
+			.help_right{
+				width: 405px;
+				h5{
+					line-height: 34px;
+					color:#333;
+					font-size:14px;
+				}
+				>p{
+					line-height: 40px;
+					height:40px;
+					width: 400px;
+					margin:10px 0px;
+					border: 1px solid #f1f0ee;
+					border-radius:2px;
+					input{
+						height: 40px;
+						width:275px;						
+						color: #cccbc9;
+						background: #fff;
+						text-indent: 1em;
+						float: left;
+						padding:0px;
+						&::placeholder{
+							color: #cccbc9;
+							text-indent: 1em;
+						}
+					}
+					button{
+						width: 125px;
+						height: 40px;
+						color:#fff;
+						float: left;
+						background: #807c77;
+					}
+				}
+				div{
+					p:nth-of-type(1){
+						height: 32px;
+						line-height: 32px;
+						font-size:15px;
+					}
+					p:nth-of-type(2){
+						height: 40px;
+						line-height: 40px;
+						font-size: 12px;
+						color: #807c77;
+						span{
+							width: 24px;
+							height:24px;
+							margin-right: 8px;
+							
+						}
+						.icon_wechat:hover{
+							background-position: -120px -544px;
+							&:after{
+								content: '';
+								display: block;
+								width: 250px;
+								height: 140px;
+								position: relative;
+								left:-270px;
+								top:-90px;
+								background: url(../img/code.png);
+							}
+							&:before{
+								content: '';
+								display: block;
+								width: 0px;
+								height:0px;
+								border: 12px solid transparent;
+								border-left-color: #fff;
+								position: relative;
+								left:-20px;
+							}
+						}
+						.icon_blog:hover{
+							background-position: -90px -544px;
+						}
+					}
+				}
+			}
+		}
+		.footer_info{			
+			width: 100%;
+			background: #807c77;				
+			p{				
+				height: 35px;
+				line-height: 35px;
+				text-align:center;
+				color: #E1E1E1;
+				a{
+					color:#e1e1e1;
+					padding: 0px 15px;
+					font-size: 12px;
+				}
+				span{
+					width: 16px;
+					height: 16px;										
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+body{
+	background: #F7F7F7;
+	//	标签类
+	.icon{
+		background-image:url(../img/icon.png);
+		background-size: 634px 616px;
+		display: inline-block;
+		background-repeat: no-repeat;
+		vertical-align: middle;
+		z-index: 0.1;
+	}
+	.icon_service{
+		background-position: -205px -539px;
+	}
+	.icon_logout{
+		background-position: -265px -539px;
+	}
+	.icon_login{
+		width: 28px;
+		background-position: -238px -539px;					
+	}
+	.icon_shop{
+		background-position: -175px -539px;
+	}
+	.icon_search{
+		background-position:-30px -545px;
+	}
+	.icon_cancel{
+		background-position: -525px -570px;
+	}
+	.icon_zwilling{
+		background-position: -588px -508px;
+	}
+	.icon_staub{
+		background-position: -90px -569px;
+	}
+	.icon_ballarini{
+		background-position: -358px -499px;
+	}
+	.icon_police{
+		background-position:0px -602px;
+	}
+	.icon_license{
+		background: url(../img/license.png) no-repeat;
+		background-size: 16px 16px;
+	}
+	.icon_wechat{		
+		background-position: -450px -544px;	
+	}
+	.icon_blog{		
+		background-position:-480px -544px;	
+	}
+	.icon_service1{		
+		background-position:0px -544px;	
+	}
+	.icon_wechatC{
+		background-position: -120px -544px;
+	}
+	.icon_blogC{
+		background-position: -90px -544px;
+	}
+	.icon_alipay{
+		background-position: -420px -544px;
+	}
+	.max_width{
+		max-width: 1350px;
+		padding: 0 20px;
+		margin:0px auto;
+	}
+	.pub_width{
+		width: 1085px;
+		margin:0px auto;
+	}
+	.hidden{
+		display: none;
+	}
+}
+

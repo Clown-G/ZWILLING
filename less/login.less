@@ -1,0 +1,288 @@
+.content{
+	.ban_login{
+		width: 100%;
+		height: 180px;			
+	}
+	//	登录内容
+	.login_form{		
+		position:relative;
+		top:-65px;
+		padding:0px 30px 100px 75px;
+		box-sizing: border-box;	
+		.title{
+			position: absolute;
+			font-size: 24px;
+			color:#000;
+			top:-70px;
+			left:30%;
+			&:after{
+				content: 'Login';
+				display: block;
+				font-size:16px;
+				color: #999;
+				margin-left: 24px;
+			}
+		}
+		// 登录、注册表单
+		.reister_info{
+			padding: 10px 295px 30px;
+			width:990px;
+			h4{
+				margin-top: 20px;
+			}
+			h6{
+				a{
+					text-decoration: underline;
+					margin-left: 10px;
+				}
+			}
+			.step{
+				text-align:center;
+				margin:0 125px;
+				span{
+					float: left;
+					width: 20px;
+					height: 20px;
+					background: #CCCBC9;
+					color: #fff;
+					border-radius:10px;
+					line-height: 20px;
+				}
+				span:nth-of-type(1){
+					&:after{
+						content: '手机验证';
+						display: block;
+						width: 50px;
+						position: relative;
+						left:-15px;
+						color:#e1e1e1;
+					}
+				}
+				span:nth-of-type(2){					
+					position:relative;
+					left:100px;
+					line-height:18px;
+					&:after{
+						content: '设置密码';
+						display: block;
+						width: 50px;
+						color:#e1e1e1;
+						position: relative;
+						left:-15px;
+					}
+					&:before{
+						content: '';
+						float: left;
+						width: 100px;
+						height:2px;
+						background:#807C77;
+						position: relative;
+						left:-100px;
+						top:8px;
+					}
+				}
+				.active{					
+					background: #807c77;
+					&:after{						
+						width: 50px;
+						color: #807c77!important;						
+					}
+				}
+			}
+			.code{
+				position: relative;
+				a{
+					position: absolute;
+					right: 15px;
+					top: 15px;
+					color: #333;					
+					&:before{
+						content: '|';
+						display: inline-block;
+						margin-right: 15px;
+						color: #e1e1e1;
+					}
+				}
+			}
+			.title{
+				position: absolute;
+				font-size: 24px;
+				color:#000;
+				top:-70px;
+				left:50%;
+				&:after{
+					content: 'Registion';
+					display: block;
+					font-size:16px;
+					color: #999;
+					margin-left: 16px;
+				}
+			}
+		}
+		>div{			
+			height: 500px;
+			width: 615px;
+			background: #fff;
+			box-shadow:0px 0px 6px #ddd,0px 0px 6px #ddd;
+			padding: 10px 105px 30px;
+			box-sizing: border-box;
+			font-size:12px;
+			.title{
+				position: absolute;
+				font-size: 24px;
+				color:#000;
+				top:-70px;
+				left:30%;
+				&:after{
+					content: 'Login';
+					display: block;
+					font-size:16px;
+					color: #999;
+					margin-left: 24px;
+				}
+			}
+			h5{
+				height: 52px;
+				line-height: 52px;
+				;
+				color:#999;
+				input{
+					float: left;					
+					margin-top: 19px;
+					width: 16px;
+					height: 16px;
+					border: 1px solid #EE1C25;					
+				}
+				a{
+					color: #807c77;
+					text-decoration: underline;
+				}
+				span{					
+					font-size:12px;					
+					margin-left:6px;
+					display: inline-block;
+					color: #EE1C25;
+				}
+				i{
+					
+				}
+			}
+			h4{
+				height: 65px;
+				line-height: 65px;
+				button{
+					height: 40px;
+					background: #EE1C25;
+					color: #fff;
+					width: 125px;
+					font-size:12px;
+				}				
+			}
+			h6{
+				height: 34px;
+				line-height: 34px;
+				color: #807c77;
+				font-size:12px;
+				span{
+					float:left;
+					width: 24px;
+					height: 24px;
+					margin-right: 42px;
+				}
+			}
+			p{
+				height:40px;
+				input{
+					width: 100%;
+					height:40px;
+					background: #fff;
+					border: 1px solid #E1E1E1;
+					line-break: 40px;
+					text-indent:1em;
+					&::placeholder{
+						color: #e4e3e2;
+						font-size: 12px;
+					}
+				}				
+			}
+			p:nth-of-type(3){
+				input{
+					width: 260px;
+				}
+				img{
+					width: 130px;
+					height: 40px;
+				}
+			}
+			.msg_block{
+				line-height: 35px;
+				height: 35px;
+				color:#EE1C25;
+				font-size: 12px;
+			}
+		}		
+		.login_right{
+			width: 335px;
+			background: #fff;
+			height:400px;
+			box-shadow:0px 0px 6px #ddd,0px 0px 6px #ddd;
+			h3{
+				padding: 10px 0px;
+				height: 69px;
+				line-height: 69px;
+				border-bottom:1px solid #E1E1E1;
+				text-align: center;
+				color:#333;
+				font-size:18px;
+			}
+			.info{
+				padding-left: 50px;
+				h4{
+					height: 52px;
+					line-height:52px;
+					color:#807c77;
+					font-size:14px;
+				}
+				p{
+					height: 40px;
+					line-height:40px;
+					color:#333333;
+					font-size:12px;
+				}
+				li{
+					height: 30px;
+					line-height: 30px;
+					color:#999;
+					font-size:12px;
+					&:before{
+						content: '';
+						position:relative;
+						display:inline-block;
+						width: 5px;
+						height: 5px;
+						border-radius:3px;
+						margin-right: 5px;
+						top: -2px;
+						background: #EE1C25;
+					}
+				}
+				p:last-child{
+					margin-top: 40px;
+					a{
+						position: absolute;
+						text-align: center;
+						width: 128px;
+						height: 38px;
+						line-height: 38px;
+						border: 1px solid #807c77;
+						color: #807C77;
+						border: 1px solid #807C77;
+						font-size:12px;
+						border-radius:3px;
+						margin-left:50px;
+					}
+				}
+			}
+		}
+	}
+}
