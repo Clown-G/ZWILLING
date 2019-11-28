@@ -210,6 +210,7 @@
   font-size: 12px;
 }
 .content .login_form .login_right {
+  padding: 0px;
   width: 335px;
   background: #fff;
   height: 400px;

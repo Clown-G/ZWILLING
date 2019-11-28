@@ -323,6 +323,53 @@
 .wrap .content {
   padding-top: 120px;
 }
+.wrap .content .banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+.wrap .content .banner ul {
+  width: 400%;
+}
+.wrap .content .banner ul li {
+  width: 25%;
+  float: left;
+}
+.wrap .content .banner ul li a {
+  float: left;
+}
+.wrap .content .banner ul li a img {
+  width: 100%;
+  height: auto;
+}
+.wrap .content .banner .ban_nav {
+  position: absolute;
+  left: 49%;
+  bottom: 75px;
+}
+.wrap .content .banner .ban_nav span {
+  width: 16px;
+  height: 16px;
+  background: #cccbc9;
+  float: left;
+  transform: scale(0.5);
+}
+.wrap .content .banner .ban_nav .active {
+  background: #ee1d25;
+}
+.wrap .content .banner .activity {
+  position: absolute;
+  right: 0px;
+  bottom: -55px;
+  width: 435px;
+  height: 105px;
+  z-index: 1;
+}
+.wrap .content .banner .activity a {
+  float: left;
+  width: 100%;
+}
 .wrap footer {
   border-top: 1px solid #e1e1e1;
 }
@@ -518,15 +565,53 @@ body .icon_blogC {
 body .icon_alipay {
   background-position: -420px -544px;
 }
+body .icon_zw {
+  background-position: 0px -260px;
+}
+body .icon_st {
+  background-position: 0px -260px;
+}
+body .icon_ba {
+  background-position: 0px -260px;
+}
+body .icon_more_r {
+  background-position: -148px -450px;
+}
 body .max_width {
   max-width: 1350px;
   padding: 0 20px;
   margin: 0px auto;
 }
 body .pub_width {
-  width: 1085px;
+  width: 1080px;
   margin: 0px auto;
 }
 body .hidden {
   display: none;
+}
+body .pub_title {
+  text-align: center;
+  position: relative;
+}
+body .pub_title > h4 {
+  height: 44px;
+  color: #000;
+  font-size: 28px;
+  line-height: 44px;
+}
+body .pub_title > h4 a {
+  position: absolute;
+  right: 0px;
+  color: #000;
+  font-size: 14px;
+}
+body .pub_title > h4 a span {
+  width: 8px;
+  height: 8px;
+}
+body .pub_title > p {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #b4adaa;
 }

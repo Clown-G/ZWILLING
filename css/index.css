@@ -1,0 +1,168 @@
+@charset 'utf-8';
+.main {
+  width: 100%;
+}
+.main > div {
+  padding: 45px 40px 0px;
+  box-sizing: border-box;
+}
+.main .brand > div {
+  background: #fff;
+  padding: 25px 30px 25px 0px;
+}
+.main .brand > div .intro {
+  width: 490px;
+}
+.main .brand > div .intro h3 {
+  width: 200px;
+  height: 55px;
+  line-height: 55px;
+  color: #f8f8f8;
+  background: #363029;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: -55px;
+}
+.main .brand > div .intro h3:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #ee1d25;
+  position: relative;
+  top: 30px;
+  left: 40px;
+}
+.main .brand > div .intro p {
+  padding: 15px 30px 15px 40px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #807c77;
+}
+.main .brand > div ul li {
+  float: left;
+  width: 160px;
+  height: 160px;
+  padding: 35px;
+  box-sizing: border-box;
+}
+.main .brand > div ul li a {
+  float: left;
+  width: 96px;
+  height: 60px;
+}
+.main .brand > div ul li:nth-of-type(1) a {
+  width: 72px;
+  height: 72px;
+  background: url(../img/logo_zwilling.png) no-repeat;
+  background-size: 72px 72px;
+}
+.main .brand > div ul li:nth-of-type(1) a:hover {
+  background: url(../img/logo_zwilling_h.png) no-repeat;
+  background-size: 72px 72px;
+}
+.main .brand > div ul li:nth-of-type(2) a {
+  background: url(../img/logo_staub.png) no-repeat;
+  background-size: 96px 60px;
+}
+.main .brand > div ul li:nth-of-type(2) a:hover {
+  background: url(../img/logo_staub_h.png) no-repeat;
+  background-size: 96px 60px;
+}
+.main .brand > div ul li:nth-of-type(3) a {
+  background: url(../img/logo_ballarini.png) no-repeat;
+  background-size: 96px 60px;
+}
+.main .brand > div ul li:nth-of-type(3) a:hover {
+  background: url(../img/logo_ballarini_h.png) no-repeat;
+  background-size: 96px 60px;
+}
+.main .discover .dis_info {
+  padding: 35px 20px 0px;
+}
+.main .discover .dis_info .fl {
+  width: 240px;
+  text-align: center;
+  background: #fff;
+}
+.main .discover .dis_info .fl li {
+  width: 100%;
+  position: relative;
+  padding: 12px 0px;
+  transition: 0.5s;
+  z-index: 5;
+  left: 0;
+}
+.main .discover .dis_info .fl li > a {
+  width: 100%;
+  float: left;
+  line-height: 28px;
+}
+.main .discover .dis_info .fl li p {
+  clear: both;
+  height: 20px;
+  line-height: 20px;
+  color: #bebebe;
+  transform: scale(0.6);
+}
+.main .discover .dis_info .fl li:hover {
+  left: 30px;
+  transition: 0.5s;
+}
+.main .discover .dis_info .fl .active {
+  background: #393531;
+}
+.main .discover .dis_info .fl .active > a {
+  color: #fff;
+}
+.main .discover .dis_info .fr {
+  background: #ee1d25;
+  width: 720px;
+  height: 432px;
+  position: relative;
+}
+.main .discover .dis_info .fr img {
+  position: absolute;
+}
+.main .discover .dis_info .fr img:nth-of-type(1) {
+  width: 720px;
+  height: 432px;
+  left: 0px;
+  top: 0px;
+}
+.main .discover .dis_info .fr img:nth-of-type(2) {
+  width: 540px;
+  height: 320px;
+  left: 800px;
+  top: 55px;
+  opacity: 0.5;
+}
+.main .discover .dis_info .fr img:nth-of-type(3) {
+  width: 270px;
+  height: 160px;
+  left: 600px;
+  top: 30px;
+  opacity: 0;
+}
+.main .discover .dis_info .fr img:nth-of-type(4) {
+  width: 270px;
+  height: 160px;
+  left: 100px;
+  top: 0px;
+  opacity: 0;
+}
+.main .discover .dis_info .fr img:nth-of-type(5) {
+  width: 270px;
+  height: 160px;
+  left: -400px;
+  top: 30px;
+  opacity: 0;
+}
+.main .discover .dis_info .fr img:nth-of-type(6) {
+  width: 540px;
+  height: 320px;
+  left: -850px;
+  top: 55px;
+  opacity: 0.5;
+}

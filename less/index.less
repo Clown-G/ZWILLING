@@ -1,0 +1,178 @@
+@charset 'utf-8';
+.main{
+    width: 100%;
+    >div{
+        padding: 45px 40px 0px;
+        box-sizing: border-box;
+    }
+    .brand{       
+        >div{
+            background:#fff;
+            padding: 25px 30px 25px 0px;
+            .intro{
+                width: 490px;
+                h3{
+                    width:200px;
+                    height: 55px;
+                    line-height: 55px;
+                    color: #f8f8f8;;
+                    background:#363029;
+                    font-size:30px;
+                    text-align:center;
+                    position: relative;
+                    top:-55px;
+                    &:after{
+                        content: '';
+                        display: block;
+                        width: 30px;
+                        height: 2px;
+                        background:#ee1d25;
+                        position: relative;
+                        top:30px;
+                        left:40px;
+                    }
+                }
+                p{
+                 padding: 15px 30px 15px 40px;
+                 font-size:12px;
+                 line-height:24px;
+                 color:#807c77;   
+                }
+            }            
+            ul{
+                li{
+                    float: left; 
+                    width: 160px;
+                    height: 160px;
+                    padding: 35px; 
+                    box-sizing: border-box;                                      
+                    a{
+                        float: left;
+                        width: 96px;
+                        height: 60px;                                      
+                    } 
+                    &:nth-of-type(1) a{
+                        width: 72px;
+                        height: 72px;
+                        background: url(../img/logo_zwilling.png) no-repeat;
+                        background-size:72px 72px; 
+                        &:hover{  
+                            background: url(../img/logo_zwilling_h.png) no-repeat;
+                            background-size:72px 72px;
+                        }
+                        
+                    }
+                    &:nth-of-type(2) a{
+                        background: url(../img/logo_staub.png) no-repeat;
+                        background-size:96px 60px; 
+                        &:hover{
+                            background: url(../img/logo_staub_h.png) no-repeat;
+                            background-size:96px 60px; 
+                        } 
+                    }
+                    &:nth-of-type(3) a{
+                        background: url(../img/logo_ballarini.png) no-repeat;
+                        background-size:96px 60px; 
+                        &:hover{
+                            background: url(../img/logo_ballarini_h.png) no-repeat;
+                            background-size:96px 60px; 
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .discover{
+        .dis_info{
+            padding: 35px 20px 0px;
+            
+            .fl{
+                width: 240px;
+                text-align:center;
+                background:#fff;                          
+                li{
+                    width: 100%;
+                    position: relative;
+                    padding: 12px 0px;
+                    transition:0.5s;
+                    z-index: 5;
+                    left: 0; 
+                    >a{
+                        width: 100%;
+                        float: left;
+                        line-height: 28px; 
+                    }
+                    p{
+                        clear: both;
+                        height: 20px;
+                        line-height: 20px; 
+                        color:#bebebe;                        
+                        transform: scale(0.6);                                 
+                    }
+                    &:hover{
+                        left:30px;
+                        transition:0.5s;                        
+                    }
+                }
+                .active{
+                    background:#393531;
+                    >a{
+                        color:#fff;
+                    }
+                }
+            }
+            .fr{                
+                background: #ee1d25;
+                width: 720px;
+                height: 432px;
+                position: relative;               
+                img{
+                    position: absolute;
+                } 
+                img:nth-of-type(1){
+                width: 720px;
+                height: 432px;
+                left:0px;
+                top:0px; 
+                }   
+                img:nth-of-type(2){
+                width: 540px;
+                height: 320px;
+                left:800px;
+                top:55px;
+                opacity: 0.5; 
+                }
+                img:nth-of-type(3){
+                width: 270px;
+                height: 160px;
+                left:600px;
+                top:30px;
+                opacity: 0;
+                }
+                img:nth-of-type(4){
+                    width: 270px;
+                    height: 160px;
+                    left:100px;
+                    top:0px;
+                    opacity: 0;
+                    }
+                img:nth-of-type(5){
+                    width: 270px;
+                    height: 160px;
+                    left:-400px;
+                    top:30px;
+                    opacity: 0;
+                }
+                img:nth-of-type(6){
+                width: 540px;
+                height: 320px;
+                left:-850px;
+                top:55px;
+                opacity: 0.5;
+                }                
+            }
+        }        
+        
+    }
+}
