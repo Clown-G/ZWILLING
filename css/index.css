@@ -166,3 +166,152 @@
   top: 55px;
   opacity: 0.5;
 }
+.main .brand_story {
+  padding-top: 0px;
+  margin-top: 45px;
+  width: 100%;
+  background: url(../img/brand_story.jpg);
+  background-size: 100% 100%;
+  position: relative;
+}
+.main .brand_story .mask {
+  position: absolute;
+  width: 52%;
+  height: 100%;
+  border-right: 120px solid transparent;
+  border-bottom: 438px solid #393531;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  opacity: 0.8;
+}
+.main .brand_story div {
+  position: relative;
+  z-index: 1;
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+.main .brand_story div div {
+  padding-left: 30px;
+  color: #fff;
+  width: 380px;
+  padding: 55px 0px 65px 30px;
+}
+.main .brand_story div div h3 {
+  line-height: 64px;
+  font-size: 29px;
+  margin-bottom: 20px;
+}
+.main .brand_story div div h3:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 40px;
+  background: #fff;
+}
+.main .brand_story div div p:nth-of-type(1) {
+  line-height: 50px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.main .brand_story div div p:nth-of-type(2) {
+  line-height: 24px;
+  font-size: 12px;
+}
+.main .brand_story div div p:nth-of-type(3) a {
+  display: block;
+  line-height: 40px;
+  font-size: 12px;
+  border: 1px solid #fff;
+  width: 130px;
+  height: 40px;
+  margin: 22px 0px;
+  text-align: center;
+  color: #fff;
+}
+.main .share div {
+  display: flex;
+  justify-content: space-between;
+}
+.main .share div a {
+  display: block;
+  width: 320px;
+  background: #FFF;
+  position: relative;
+  top: 0px;
+  transition: 0.5s;
+}
+.main .share div a:hover {
+  top: -20px;
+  transition: 0.5s;
+  box-shadow: 0px 0px 6px 6px #e3e3e3;
+  color: #33336c;
+}
+.main .share div a:hover p:after {
+  content: '';
+  display: block;
+  border: 1px solid #fff;
+  width: 300px;
+  height: 170px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.main .share div a img {
+  width: 100%;
+  height: 195px;
+}
+.main .share div a p {
+  line-height: 20px ;
+  color: #999;
+  font-size: 12px;
+  padding: 35px 60px 35px 40px;
+}
+.main .service .ser_info {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 70px 0px;
+}
+.main .service .ser_info a {
+  position: relative;
+  top: 0px;
+  transition: 0.5s;
+  display: block;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 35px 55px;
+  background: #fff;
+}
+.main .service .ser_info a:hover {
+  top: -20px;
+  transition: 0.5s;
+  box-shadow: 0px 0px 6px 6px #e3e3e3;
+}
+.main .service .ser_info a span {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0px auto;
+}
+.main .service .ser_info a h4 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 58px;
+  margin-top: 10px;
+  color: #333333;
+}
+.main .service .ser_info a p {
+  line-height: 20px;
+  color: #999999;
+  font-size: 12px;
+  text-align: center;
+}
+.main .service .ser_info a:nth-of-type(1):hover span {
+  background-position: -198px -56px;
+}
+.main .service .ser_info a:nth-of-type(2):hover span {
+  background-position: -384px -144px;
+}
+.main .service .ser_info a:nth-of-type(3):hover span {
+  background-position: -382px -70px;
+}
