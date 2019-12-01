@@ -1,0 +1,164 @@
+@charset 'utf-8';
+.content {
+  background: #fff;
+}
+.content .title h2 {
+  padding: 30px 0px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+}
+.content .title h2:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 5px;
+  margin: 0px auto;
+  background: #ee1c25;
+}
+.content .wares_list {
+  width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 0px 40px;
+}
+.content .wares_list .wares {
+  border-right: 1px solid #ddd;
+}
+.content .wares_list .wares > div:nth-of-type(1) a {
+  display: block;
+}
+.content .wares_list .wares > div:nth-of-type(1) a img {
+  width: 330px;
+  height: 280px;
+}
+.content .wares_list .wares > div:nth-of-type(2) {
+  text-align: center;
+}
+.content .wares_list .wares > div:nth-of-type(2) a {
+  display: block;
+  color: #333;
+}
+.content .wares_list .wares > div:nth-of-type(2) a span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 10px;
+}
+.content .wares_list .wares > div:nth-of-type(2) a:nth-of-type(1) p {
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.content .wares_list .wares > div:nth-of-type(2) a:nth-of-type(1) h5 {
+  line-height: 30px;
+}
+.content .wares_list .wares > div:nth-of-type(2) a:nth-of-type(2) {
+  margin: 25px 0px;
+  color: #807c77;
+  font-size: 14px;
+}
+.content .wares_list .wares > div:nth-of-type(2) p {
+  line-height: 24px;
+}
+.content .wares_list .wares > div:nth-of-type(2) p span {
+  font-size: 14px;
+  color: #ee1c25;
+  padding: 0px 20px;
+}
+.content .wares_list .wares > div:nth-of-type(2) p i {
+  font-size: 12px;
+  color: #cccbd1;
+  text-decoration: line-through;
+}
+.content .hot {
+  background: url(../img/w_bg.png);
+}
+.content .hot h3 {
+  font-size: 20px;
+  line-height: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+.content .hot div {
+  display: flex;
+  justify-content: center;
+  height: 420px;
+}
+.content .hot div a {
+  margin: 10px;
+  display: block;
+  width: 375px;
+  height: 375px;
+}
+.content .hot div a:hover img {
+  display: none;
+}
+.content .hot div a:nth-of-type(1):hover {
+  background: url(../img/w_hot01.png);
+}
+.content .hot div a:nth-of-type(2):hover {
+  background: url(../img/w_hot02.png);
+}
+.content .hot div a:nth-of-type(3):hover {
+  background: url(../img/w_hot03.png);
+}
+.content .switch {
+  width: 1000px;
+  margin: 0px auto;
+  padding: 70px 0px;
+}
+.content .switch ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f0ee;
+}
+.content .switch ul li {
+  line-height: 45px;
+  text-align: center;
+}
+.content .switch ul li a {
+  display: block;
+  width: 100%;
+  height: 44px;
+  color: #999999;
+}
+.content .switch ul .active {
+  border-bottom: 2px solid #ee1c25;
+}
+.content .switch .list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content .switch .list div {
+  padding-top: 20px;
+}
+.content .switch .list div a {
+  display: block;
+  width: 310px;
+}
+.content .switch .list div p {
+  line-height: 55px;
+  text-align: center;
+  color: #333333;
+}
+.content .switch .page div {
+  float: right;
+  margin-top: 40px;
+  padding: 30px 0px;
+}
+.content .switch .page div a {
+  color: #807c77;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.content .switch .page div .active {
+  background: #807c77;
+  color: #fff;
+  border-radius: 3px;
+}

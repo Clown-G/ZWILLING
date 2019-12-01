@@ -1,0 +1,75 @@
+@charset 'utf-8';
+.content {
+  background: #fff;
+}
+.content .title h2 {
+  padding: 30px 0px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+}
+.content .title h2:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 5px;
+  margin: 0px auto;
+  background: #ee1c25;
+}
+.content .wares_list {
+  width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 0px 40px;
+}
+.content .wares_list .wares {
+  border-right: 1px solid #ddd;
+}
+.content .wares_list .wares > div:nth-of-type(1) a {
+  display: block;
+}
+.content .wares_list .wares > div:nth-of-type(1) a img {
+  width: 330px;
+  height: 280px;
+}
+.content .wares_list .wares > div:nth-of-type(2) {
+  text-align: center;
+}
+.content .wares_list .wares > div:nth-of-type(2) a {
+  display: block;
+  color: #333;
+}
+.content .wares_list .wares > div:nth-of-type(2) a span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 10px;
+}
+.content .wares_list .wares > div:nth-of-type(2) a:nth-of-type(1) p {
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.content .wares_list .wares > div:nth-of-type(2) a:nth-of-type(1) h5 {
+  line-height: 30px;
+}
+.content .wares_list .wares > div:nth-of-type(2) a:nth-of-type(2) {
+  margin: 25px 0px;
+  color: #807c77;
+  font-size: 14px;
+}
+.content .wares_list .wares > div:nth-of-type(2) p {
+  line-height: 24px;
+}
+.content .wares_list .wares > div:nth-of-type(2) p span {
+  font-size: 14px;
+  color: #ee1c25;
+  padding: 0px 20px;
+}
+.content .wares_list .wares > div:nth-of-type(2) p i {
+  font-size: 12px;
+  color: #cccbd1;
+  text-decoration: line-through;
+}

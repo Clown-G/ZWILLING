@@ -1,0 +1,110 @@
+@charset 'utf-8';
+.main h2 {
+  width: 100%;
+  font-size: 30px;
+  margin-top: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+.main > div {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.main > div > a {
+  display: block;
+  padding-bottom: 35px;
+  background: #fff;
+}
+.main > div > a h3 {
+  line-height: 70px ;
+  font-size: 22px;
+  text-indent: 24px;
+  margin-bottom: 10px;
+}
+.main > div > a h4 {
+  line-height: 70px;
+  font-size: 18px;
+  text-indent: 24px;
+  margin-bottom: 10px;
+}
+.main > div:nth-of-type(2) {
+  padding: 0px;
+  background: none;
+}
+.main > div:nth-of-type(2) a {
+  padding: 0px;
+  display: block;
+}
+.main > div:nth-of-type(2) a img {
+  width: 100%;
+  height: auto;
+}
+.main > div:nth-of-type(3) a,
+.main > div:nth-of-type(1) a {
+  padding-bottom: 50px;
+}
+.main > div:nth-of-type(3) a img,
+.main > div:nth-of-type(1) a img {
+  width: 320px;
+  height: auto;
+}
+.main > div:nth-of-type(3) a span,
+.main > div:nth-of-type(1) a span {
+  position: relative;
+  left: 24px;
+  font-size: 14px;
+  padding: 7px 0px;
+  border-bottom: 2px solid #000;
+  transition: 0.5s;
+}
+.main > div:nth-of-type(3) a:hover span,
+.main > div:nth-of-type(1) a:hover span {
+  left: 48px;
+  transition: 0.5s;
+  color: #ee1c25;
+  border-color: #ee1c25;
+}
+.main > div:nth-of-type(4) {
+  display: block;
+}
+.main > div:nth-of-type(4) .pub_content {
+  padding: 40px 0px 0px 0px;
+}
+.main > div:nth-of-type(5) div {
+  width: 500px;
+  margin: 0px 10px;
+  padding: 100px 0px 110px 0px;
+  text-align: center;
+  color: #fff;
+}
+.main > div:nth-of-type(5) div p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.main > div:nth-of-type(5) div h3 {
+  font-size: 28px;
+  line-height: 70px;
+}
+.main > div:nth-of-type(5) div a {
+  display: block;
+  margin: 0px auto;
+  width: 65px;
+  font-size: 15px;
+  color: #fff;
+  padding: 5px 0px;
+  border-bottom: 2px solid #fff;
+}
+.main > div:nth-of-type(5) div a:hover {
+  border-color: #ee1c25;
+}
+.main > div:nth-of-type(5) div:nth-of-type(1) {
+  background: url(../img/b_use1.png);
+  background-size: 100% auto;
+}
+.main > div:nth-of-type(5) div:nth-of-type(2) {
+  background: url(../img/b_use2.png);
+  background-size: 100% auto;
+}
