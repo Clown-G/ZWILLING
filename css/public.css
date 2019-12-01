@@ -712,6 +712,7 @@ body .pub_content a p:nth-of-type(4) span {
   color: #ee1c25;
   font-size: 14px;
   margin-right: 20px;
+  border: none;
 }
 body .pub_content a p:nth-of-type(4) i {
   color: #cccbc9;
