@@ -162,3 +162,75 @@
   color: #fff;
   border-radius: 3px;
 }
+.content .food {
+  color: #333;
+  width: 1000px;
+  margin: 0px auto;
+}
+.content .food h3 {
+  margin-top: 16px;
+  line-height: 65px;
+  text-align: center;
+}
+.content .food > div {
+  height: 410px;
+  padding: 36px 50px;
+  box-sizing: border-box;
+}
+.content .food > div > h4 {
+  text-align: center;
+  font-weight: bold;
+}
+.content .food > div > p {
+  text-align: center;
+}
+.content .food > div .img {
+  width: 425px;
+  float: left;
+  margin: 0px 50px;
+}
+.content .food > div .text {
+  width: 290px;
+  float: left;
+  padding-left: 50px;
+  padding-top: 80px;
+}
+.content .food > div .text h4 {
+  font-weight: bold;
+  line-height: 24px;
+}
+.content .food > div .text h5 {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.content .food > div .text p {
+  width: 100%;
+  line-height: 24px;
+  text-align: left;
+}
+.content .food .title a {
+  display: block;
+  width: 700px;
+  margin: 0px auto;
+  padding: 10px 0px 35px 0px;
+}
+.content .food .title p {
+  width: 390px;
+  text-align: center;
+  margin: 0px auto;
+  line-height: 24px;
+}
+.content .food .date {
+  height: auto;
+}
+.content .food .date div {
+  width: 700px;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+.content .food .code {
+  width: 700px;
+  height: auto;
+  padding: 20px 0px;
+  margin: 0px auto;
+}
