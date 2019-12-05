@@ -618,6 +618,12 @@ body .icon_ba_1 {
 body .icon_more_r {
   background-position: -148px -450px;
 }
+body .icon_more_g {
+  background-position: -135px -450px;
+}
+body .icon_more_d {
+  background-position: -232px -125px;
+}
 body .icon_ser_1 {
   background-position: -382px 0px;
 }
@@ -626,6 +632,30 @@ body .icon_ser_2 {
 }
 body .icon_ser_3 {
   background-position: -382px -210px;
+}
+body .icon_add {
+  background-position: -388px -463px;
+}
+body .icon_reduce {
+  background-position: -372px -463px;
+}
+body .icon_check {
+  background-position: -354px -463px;
+}
+body .icon_catch {
+  background-position: -582px 5px;
+}
+body .icon_love {
+  background-position: -615px -375px;
+}
+body .icon_share {
+  background-position: -615px -350px;
+}
+body .icon_checkout {
+  background-position: -122px -575px;
+}
+body .icon_checkin {
+  background-position: -357px -291px;
 }
 body .max_width {
   max-width: 1350px;
@@ -688,7 +718,7 @@ body .pub_content a:hover {
 }
 body .pub_content a p {
   font-size: 12px;
-  color: #33336c;
+  color: #333;
 }
 body .pub_content a p:nth-of-type(1) {
   width: 40px;
@@ -724,4 +754,19 @@ body .pub_content a p:nth-of-type(4) i {
 body .pub_content a img {
   width: 195px;
   height: 188px;
+}
+body .page div {
+  float: right;
+  margin-top: 20px;
+  padding: 30px 0px;
+}
+body .page div a {
+  color: #807c77;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+body .page div .active {
+  background: #807c77;
+  color: #fff;
+  border-radius: 3px;
 }

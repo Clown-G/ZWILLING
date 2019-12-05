@@ -1,0 +1,307 @@
+@charset 'utf-8';
+//  商品列表页
+.wrap{
+    background: #fff;
+    .content{
+        width: 1200px;
+        margin: 0px auto;
+        //  面包屑
+        h2{            
+            height: 50px;
+            font-size:12px;
+            span{
+                float: left;
+                line-height:50px;
+                color: #807c77;
+            }
+            i{
+                float: left;
+                line-height: 50px;
+                color: #807c77;
+                margin: 0px 10px;
+            }
+            a{
+                float: left;
+                line-height:50px;               
+            }
+        }
+        // 侧边栏导航
+        .sidebar{
+            width:200px;
+            border: 2px solid #f1f0ee;
+            box-sizing: border-box;            
+            color: #333;
+            font-size:12px;
+            ul{ 
+                .active{
+                  ul{
+                      display: block;
+                  } 
+                }  
+                //  栏目            
+                .column{                   
+                    width:100%;
+                    padding:0 15px;
+                    box-sizing: border-box;
+                    line-height: 45px;
+                    border-bottom:1px solid #f1f0ee;
+                    .item{  
+                        clear: both;                                             
+                        li{
+                            width: 100%;
+                            line-height: 25px;
+                            display: block;
+                            a{
+                                color:#807c77;
+                                display: block;
+                                span{
+                                    width: 12px;
+                                    height: 12px;
+                                    display: inline-block;
+                                }
+                            }
+                            ul{
+                                padding:0 12px;
+                                .active{                                    
+                                    a{
+                                        color:#f01114;
+                                    }
+                                }
+                                li{
+                                    a{
+                                        color:#999;
+                                        line-height:25px;
+                                        span{
+                                            margin-top: 6px;
+                                            float: right;
+                                            width: 12px;
+                                            height: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    h3{
+                        font-size: 16px;                       
+                    }
+                    >a{
+                        float: left;
+                    }
+                    >i{
+                        color:#807c77;height: 30px;
+                        border-bottom:1px solid #807c77;
+                    }
+                    >span{
+                        float:right;
+                        width: 12px;
+                        height: 12px;
+                        margin-top:16px;                        
+                    }
+                }
+            }
+        }
+        // 商品列表
+        .wares_list{
+            .title{
+                text-indent: 40px;
+                h3{
+                    line-height: 36px;
+                    font-size:15px;
+                    font-weight:bold;
+                    color: #333;
+                }
+                p{
+                    line-height: 32px;
+                    font-size: 12px;
+                    color: #666;
+                }
+            }
+            .pub_content{
+                padding: 30px 20px 25px 20px;
+            }           
+        }
+        //  商品详情
+        .detail{
+            padding-top:12px;
+            .detail_img{
+                width: 119px;
+                margin-right:30px;
+                div{
+                    border:1px solid #ddd;
+                    margin-bottom:20px;                    
+                }
+                .active{
+                    border:1px solid #ee1d25;
+                }                
+            }
+            //  商品信息
+            .detail_info{
+                .info_img{
+                    width: 500px;
+                    height: 500px;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 100%;                       
+                    }
+                    .move{
+                        width: 200px;
+                        height: 200px;
+                        position: absolute;
+                        left:0px;
+                        top:0px;
+                        // background:rgba(128,124,119,0.5);
+                        background:rgba(192,189,186,0.5);
+                        cursor:move;
+                        // border:1px solid #999;
+                    }
+                    span{
+                        position: absolute;
+                        width: 30px;
+                        height:30px;
+                        right:0px;
+                        bottom:0px;
+                        background-color:rgba(192,189,186,0.5);
+                        &:after{
+                            content: '+';
+                            font-size: 14px;
+                            color:#fff;
+                            position: absolute;
+                            right: 12px;
+                            bottom:8px;
+                        }
+                    }
+                    .catch{
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        position: absolute;
+                        left:420px;
+                        top:0px;                        
+                        img{
+                            width: 200%;
+                        }
+                    }
+                    
+                }
+                .info{
+                    width: 455px;
+                    box-sizing: border-box;
+                    padding-left:45px;
+                    color:#333;
+                    font-size: 12px;
+                    h4{
+                       line-height:28px;                       
+                    }
+                    h5{
+                        margin: 10px 0px 6px 0px;
+                        font-size:15px;
+                    }
+                    >p:nth-of-type(1){
+                        color:#807c77;
+                        font-size:12px;
+                        margin-bottom:10px;
+                    }
+                    >p:nth-of-type(2){                       
+                        font-size:12px;
+                        padding: 10px 0px;
+                        span{
+                            font-size:18px;
+                            color: #ee1d25;
+                            margin-right:10px;
+                        }
+                        i{
+                            font-size:12px;
+                            color:#cccbc9;
+                            text-decoration:line-through;
+                        }
+                    }
+                    >div{
+                        padding-bottom: 10px;
+                        p{
+                            line-height: 30px;
+                            color: #333;
+                        }
+                        p:nth-of-type(2){
+                            width: 85px;
+                            text-align: center;
+                            border:1px solid #e1e1e1; 
+                            span{
+                                display: inline-block;
+                                width:15px;
+                                height:15px;
+                                margin:5px 5px;
+                            }
+                            i{
+                                display: inline-block;
+                                margin: 0px 10px; 
+                            }                           
+                        }
+                        .active{
+                            border:1px solid #ee1d25 !important;
+                        }
+                    }
+                    >p:nth-of-type(3){
+                        padding:10px 0px;
+                        span{
+                            display: inline-block;
+                            width: 175px;
+                            border:1px solid #807c77;
+                            line-height: 35px;
+                            text-align: center;
+                            color:#807c77;
+                            border-radius:3px;
+                        }
+                        span:nth-of-type(2){
+                            color:#fff;
+                            background: #ee1c25;
+                            border:none;
+                            margin-left:10px;
+                        }
+                    }
+                    >p:nth-of-type(5),p:nth-of-type(4){
+                        line-height: 34px;
+                        span{
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                        }
+                        i{
+                            font-size:12px;                            
+                        }
+                    }
+                }
+                .pro_intro{
+                    clear: both;
+                    .title{
+                        border-bottom:1px solid #f1f0ee;
+                        padding-top:50px;
+                        h3{
+                            text-align:center;
+                            color:#f01114;
+                            font-size:14px;
+                            line-height: 45px; 
+                            &:after{
+                                content: '';
+                                display: block;
+                                width:160px;
+                                height:2px;
+                                margin: 0px auto;
+                                background: #ff0011;
+                            }                           
+                        }
+                    }
+                    .intro_img{
+                        width: 790px;
+                        margin: 0px auto;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

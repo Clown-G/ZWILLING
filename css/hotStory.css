@@ -147,21 +147,6 @@
   text-align: center;
   color: #333333;
 }
-.content .switch .page div {
-  float: right;
-  margin-top: 40px;
-  padding: 30px 0px;
-}
-.content .switch .page div a {
-  color: #807c77;
-  font-size: 12px;
-  padding: 5px 10px;
-}
-.content .switch .page div .active {
-  background: #807c77;
-  color: #fff;
-  border-radius: 3px;
-}
 .content .food {
   color: #333;
   width: 1000px;
