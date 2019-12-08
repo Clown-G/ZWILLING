@@ -11,8 +11,6 @@
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/shopCart.css">
-		<script src="../js/encapsulation.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="wrap">
@@ -33,13 +31,13 @@
                 <div class="cart_list pub_width clearfix">
                     <div class="fl">
                         <div class="item clearfix">
-                            <div><span class="icon icon_checkout"></span><a href="javascript:;">全选</a></div>
+                            <div><span class="icon icon_checkout all"></span><a href="javascript:;">全选</a></div>
                             <div>商品信息</div>
                             <div>数量</div>
                             <div>价格</div>  
                         </div>
                         <div class="item clearfix">
-                            <div><span class="icon icon_checkin"></span></div>
+                            <div class="first"><span class="icon icon_checkin"></span></div>
                             <div>
                                 <img src="../img/pop1.jpg" alt="">
                                 <p>ZWILLING</p>
@@ -47,8 +45,8 @@
                                 <p>颜色:青柠色</p>
                                 <p>规格:套装</p>
                             </div>
-                            <div>1</div>
-							<div>￥1799.00</div>
+                            <div class="num">1</div>
+							<div class="price">￥1799.00</div>
 							<div>
 								<span class="icon icon_edit"></span>
 								<span class="icon icon_loves"></span>
@@ -56,16 +54,16 @@
 							</div>  
 						</div>
 						<div class="item clearfix">
-                            <div><span class="icon icon_checkin"></span></div>
+                            <div class="first"><span class="icon icon_checkout"></span></div>
                             <div>
-                                <img src="../img/pop1.jpg" alt="">
+                                <img src="../img/pop2.jpg" alt="">
                                 <p>ZWILLING</p>
                                 <p>双立人ZWLING Now刀具体验装</p>
                                 <p>颜色:青柠色</p>
                                 <p>规格:套装</p>
                             </div>
-                            <div>1</div>
-							<div>￥1799.00</div>
+                            <div class="num">1</div>
+							<div class="price">￥1799.00</div>
 							<div>
 								<span class="icon icon_edit"></span>
 								<span class="icon icon_loves"></span>
@@ -73,16 +71,16 @@
 							</div>  
 						</div>
 						<div class="item clearfix">
-                            <div><span class="icon icon_checkin"></span></div>
+                            <div class="first"><span class="icon icon_checkin"></span></div>
                             <div>
-                                <img src="../img/pop1.jpg" alt="">
+                                <img src="../img/pop3.jpg" alt="">
                                 <p>ZWILLING</p>
                                 <p>双立人ZWLING Now刀具体验装</p>
                                 <p>颜色:青柠色</p>
                                 <p>规格:套装</p>
                             </div>
-                            <div>1</div>
-							<div>￥1799.00</div>
+                            <div class="num">1</div>
+							<div class="price">￥1799.00</div>
 							<div>
 								<span class="icon icon_edit"></span>
 								<span class="icon icon_loves"></span>
@@ -97,8 +95,8 @@
 						</ul>
 						<div>
 							<div class="clearfix">
-								<p>商品小计:<span class="fr">3件已选</span></p>
-								<p>商品总价:<span class="fr">￥7284.00</span></p>
+								<p>商品小计:<span class="fr allnum">2件已选</span></p>
+								<p>商品总价:<span class="fr allprice">￥98.00</span></p>
 								<p class="fr">(未包含运费及其他相关费用)</p>
 							</div>
 							<p class="btn">立即结算</p>
@@ -120,6 +118,10 @@
 				</div>
 			</footer>
 		</div>
+		<script src="../js/encapsulation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/shop.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
 
