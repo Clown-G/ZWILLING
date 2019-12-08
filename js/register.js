@@ -11,7 +11,7 @@ $('#tel').on('change',function(){
                 alert('对不起，您输入的账户已注册');
             }
         })        
-    }
+    }    
 })
 //  点击下一步设置密码
 $('.next').on('click',function(){
@@ -38,5 +38,7 @@ $('.submit').on('click',function(){
         user:$('#tel').val(),
         password:$('#password').val()
     });     
-    storage.set('userInfo',res);    
+    storage.set('userInfo',res);
+    session.set('user',$('#tel').val());
+    user(true);  
 })

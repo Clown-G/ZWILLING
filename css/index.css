@@ -5,6 +5,8 @@
 .main > div {
   padding: 45px 40px 0px;
   box-sizing: border-box;
+  position: relative;
+  top: 200px;
 }
 .main .brand > div {
   background: #fff;
@@ -78,8 +80,15 @@
   background: url(../img/logo_ballarini_h.png) no-repeat;
   background-size: 96px 60px;
 }
+.main .discover {
+  width: 100%;
+  padding: 0px 134px;
+  margin-top: 45px;
+  overflow: hidden;
+}
 .main .discover .dis_info {
   padding: 35px 20px 0px;
+  margin: 0px 20px;
 }
 .main .discover .dis_info .fl {
   width: 240px;
@@ -117,7 +126,6 @@
   color: #fff;
 }
 .main .discover .dis_info .fr {
-  background: #ee1d25;
   width: 720px;
   height: 432px;
   position: relative;
@@ -130,6 +138,7 @@
   height: 432px;
   left: 0px;
   top: 0px;
+  opacity: 1;
 }
 .main .discover .dis_info .fr img:nth-of-type(2) {
   width: 540px;
@@ -314,4 +323,12 @@
 }
 .main .service .ser_info a:nth-of-type(3):hover span {
   background-position: -382px -70px;
+}
+.main .move {
+  animation: move 1s forwards;
+}
+@keyframes move {
+  100% {
+    top: 0px;
+  }
 }

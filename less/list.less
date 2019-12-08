@@ -136,23 +136,30 @@
                 }                
             }
             //  商品信息
-            .detail_info{
+            .detail_info{                
                 .info_img{
                     width: 500px;
-                    height: 500px;
-                    position: relative;
-                    img{
-                        width: 100%;
-                        height: 100%;                       
-                    }
-                    .move{
-                        width: 200px;
-                        height: 200px;
-                        position: absolute;
-                        left:0px;
-                        top:0px;
-                        background:rgba(192,189,186,0.5);
-                        cursor:move;
+                    height: 500px;                    
+                    border: 1px solid #cccbc9;                    
+                    z-index: 1;
+                    .origin{
+                        width: 500px;
+                        height: 500px; 
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;                       
+                        }
+                        div{
+                            width: 200px;
+                            height: 200px;
+                            position: absolute;
+                            left:0px;
+                            top:0px;
+                            background:rgba(192,189,186,0.5);
+                            cursor:move;
+                            z-index: 9;
+                        }
                     }
                     span{
                         position: absolute;
@@ -174,11 +181,13 @@
                         width: 100%;
                         height: 100%;
                         overflow: hidden;
-                        position: absolute;
-                        left:420px;
-                        top:0px;                        
+                        position: relative;
+                        left:510px;
+                        top:-500px;
                         img{
+                            position: absolute;
                             width: 200%;
+                            height:200%;
                         }
                     }
                     

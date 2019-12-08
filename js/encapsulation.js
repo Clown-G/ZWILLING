@@ -190,12 +190,12 @@
 		
 // */
 
-// function next(el) {
-// 	if (el.nodeType != 1) {	//	判断传入参数是否是一个元素
-// 		return '请输入一个正确的元素';
-// 	}
-// 	return el.nextElementSibling;	//	返回值是传入元素的下一个同级元素
-// }
+function next(el) {
+	if (el.nodeType != 1) {	//	判断传入参数是否是一个元素
+		return '请输入一个正确的元素';
+	}
+	return el.nextElementSibling;	//	返回值是传入元素的下一个同级元素
+}
 
 // /*
 // 	作用：封装一个获取元素父级的函数
@@ -316,23 +316,23 @@
 // 		fn：触发事件是需要执行的函数
 // */
 
-// function addEvent(el,event,fn) {
-// 	if(!(el.nodeType == 1 || el.nodeType == 9)){
-// 	   return '请输入正确的元素'
-// 	}
-// 	function fn1(ev){
-// 		ev = ev || window.event;
-// 		typeof fn == 'function' && fn.call(el,ev,fn1);
-// 	}
-// 	if(el.addEventListener){	//	判断 el 是否为元素
-// 	   // 谷歌			   
-// 	   el.addEventListener(event,fn1);				   
-// 	}else{
-// 	   // ie
-// 	   el.attachEvent('on'+event,fn1);
-// 	}
+function addEvent(el,event,fn) {
+	if(!(el.nodeType == 1 || el.nodeType == 9)){
+		return '请输入正确的元素'
+	}
+	function fn1(ev){
+		ev = ev || window.event;
+		typeof fn == 'function' && fn.call(el,ev,fn1);
+	}
+	if(el.addEventListener){	//	判断 el 是否为元素
+	   // 谷歌			   
+	   el.addEventListener(event,fn1);				   
+	}else{
+	   // ie
+	   el.attachEvent('on'+event,fn1);
+	}
 	
-// }
+}
 
 /*
 	作用：获取倒计时的函数
@@ -557,5 +557,33 @@ var storage = {
 	},
 	clear:function() {
 		window.localStorage.clear();
+	}
+}
+/*
+	作用：封装一个 session 存取删数据的对象
+	对象一：是一个函数，获取 session 数据
+	对象二：是一个函数，存储 session 数据
+	对象三：是一个函数，删除 session 数据
+	对象四：是一个函数，清除所有的 session 数据
+*/
+var session = {
+	set:function(key,value) {
+		var str = JSON.stringify(value);
+		window.sessionStorage.setItem(key,str);
+	},
+	get:function(key) {
+		var str = window.sessionStorage.getItem(key);
+		if (str) {
+			var arr = JSON.parse(str);
+			return arr;
+		} else {			
+			return [];
+		}
+	},
+	remove:function(key) {
+		window.sessionStorage.removeItem(key);
+	},
+	clear:function() {
+		window.sessionStorage.clear();
 	}
 }

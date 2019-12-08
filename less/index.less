@@ -4,6 +4,8 @@
     >div{
         padding: 45px 40px 0px;
         box-sizing: border-box;
+        position: relative;
+        top:200px;
     }
     // 旗下品牌
     .brand{       
@@ -85,9 +87,14 @@
         }
     }
     //  发现最爱
-    .discover{
+    .discover{        
+        width: 100%;
+        padding: 0px 134px; 
+        margin-top:45px;
+        overflow: hidden;
         .dis_info{
-            padding: 35px 20px 0px;            
+            padding: 35px 20px 0px;
+             margin: 0px 20px;         
             .fl{
                 width: 240px;
                 text-align:center;
@@ -124,7 +131,6 @@
                 }
             }
             .fr{                
-                background: #ee1d25;
                 width: 720px;
                 height: 432px;
                 position: relative;               
@@ -136,6 +142,7 @@
                 height: 432px;
                 left:0px;
                 top:0px; 
+                opacity: 1;
                 }   
                 img:nth-of-type(2){
                 width: 540px;
@@ -344,5 +351,13 @@
                 }
             }
         }
+    }
+    .move{
+        animation: move 1s forwards;
+    }
+}
+@keyframes move{    
+    100%{
+        top:0px;
     }
 }

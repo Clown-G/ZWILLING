@@ -11,8 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<script src="js/encapsulation.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> 				
 	</head>
 	<body>
 		<div class="wrap">
@@ -43,7 +42,7 @@
 						<!-- 搜索框 -->
 						<div class="nav_search fl">
 							<a href="javascript:;" class="icon icon_search"></a>
-							<div class="search_box">
+							<div class="search_box hidden">
 								<div>
 									<p>
 										<span class="icon icon_search"></span>
@@ -215,16 +214,16 @@
 									<ul class="con_list">
 										<li>
 											<h4>												
-												<a href="views/hotClassify.html">发现最爱</a>
-											</h4>
-											<ul class="clearfix">
-												<li><a href="#">馈赠佳礼</a></li>
-												<li><a href="#">花嫁婚庆</a></li>
-												<li><a href="#">两人世界</a></li>
-												<li><a href="#">烘焙乐趣</a></li>
-												<li><a href="#">母婴时光</a></li>
-												<li><a href="#">限量收藏</a></li>
-												<li><a href="#">查看全部</a></li>
+												<a href="views/hotClassify.html?find#1">发现最爱</a>
+											</h4> 
+											<ul class="clearfix hot">
+												<li><a href="views/hotClassify.html?find#1">馈赠佳礼</a></li>
+												<li><a href="views/hotClassify.html?find#2">花嫁婚庆</a></li>
+												<li><a href="views/hotClassify.html?find#3">两人世界</a></li>
+												<li><a href="views/hotClassify.html?find#4">烘焙乐趣</a></li>
+												<li><a href="views/hotClassify.html?find#5">母婴时光</a></li>
+												<li><a href="views/hotClassify.html?find#6">限量收藏</a></li>
+												<li><a href="views/hotClassify.html?find#1">查看全部</a></li>
 											</ul>
 										</li>
 										<li>
@@ -232,30 +231,30 @@
 												<a href="views/hotClassify.html">热销分类</a>
 											</h4>
 											<ul class="clearfix">
-												<li><a href="#">中不锈钢锅具</a></li>
-												<li><a href="#">小家电</a></li>
-												<li><a href="#">铸铁锅</a></li>
-												<li><a href="#">陶瓷</a></li>
-												<li><a href="#">陶瓷</a></li>
-												<li><a href="#">查看全部</a></li>
+												<li><a href="views/list.html">中不锈钢锅具</a></li>
+												<li><a href="views/list.html">小家电</a></li>
+												<li><a href="views/list.html">铸铁锅</a></li>
+												<li><a href="views/list.html">陶瓷</a></li>
+												<li><a href="views/list.html">陶瓷</a></li>
+												<li><a href="views/list.html">查看全部</a></li>
 											</ul>
 										</li>
 										<li>
 											<h4>
-												<a href="views/hotClassify.html">人气No.1</a>
+												<a href="views/hotClassify.html?pop#1">人气No.1</a>
 											</h4>
 											<ul class="clearfix">												
 												<li><img src="img/nav_01.png" ></li>
-												<li><a href="#">查看全部</a></li>
+												<li><a href="views/hotClassify.html?pop#1">查看全部</a></li>
 											</ul>
 										</li>
 										<li>
 											<h4>												
-												<a href="views/hotClassify.html">精选套装</a>
+												<a href="views/hotClassify.html?meal#1">精选套装</a>
 											</h4>
 											<ul class="clearfix">
 												<li><img src="img/nav_02.jpg" ></li>
-												<li><a href="#">查看全部</a></li>
+												<li><a href="views/hotClassify.html?meal#1">查看全部</a></li>
 											</ul>
 										</li>
 									</ul>									
@@ -339,21 +338,21 @@
 			</header>
 			<!-- 页面主体 -->
 			<div class="content">
-				<!-- 轮播图 -->
+				<!-- 轮播图 -->				
 				<div class="banner">
-					<ul class="clearfix">
-						<li><a href="#"><img src="img/banner1.jpg" alt=""></a></li>
-						<li><a href="#"><img src="img/banner2.jpg" alt=""></a></li>
-						<li><a href="#"><img src="img/banner3.jpg" alt=""></a></li>
-						<li><a href="#"><img src="img/banner4.jpg" alt=""></a></li>
-					</ul>
-					<div class="ban_nav">
-						<span></span>
-						<span></span>
-					</div>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="img/banner1.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="img/banner2.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="img/banner3.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="img/banner4.jpg" alt=""></div>
+						</div>
+						<!-- 如果需要分页器 -->
+						<div class="swiper-pagination"></div>
+					</div>					
 					<div class="activity">
 						<a href="#"><img src="img/activity.jpg" alt=""></a>
-					</div>
+					</div> 
 				</div>
 				<!-- 页面主体 -->
 				<div class="main">
@@ -375,8 +374,8 @@
 						</div>
 					</div>
 					<!-- 发现最爱 -->
-					<div class="discover pub_width">
-						<div class="pub_title">
+					<div class="discover">
+						<div class="pub_title pub_width">
 							<h4>
 								发现最爱
 								<a href="views/login.html">发现更多 <span class="icon icon_more_r"></span></a>
@@ -386,37 +385,37 @@
 						<div class="dis_info clearfix">	
 							<ul class="fl">
 								<li class="active">
-									<a href="">独家好物</a>
+									<a href="views/hotClassify.html?6">独家好物</a>
 									<p>ONLINE SHOP ONLY</p>
 								</li>
 								<li>
-									<a href="">馈赠佳礼</a>
+									<a href="views/hotClassify.html?1">馈赠佳礼</a>
 									<p>THE BEST GIFTS</p>
 								</li>
 								<li>
-									<a href="">花嫁婚庆</a>
+									<a href="views/hotClassify.html?2">花嫁婚庆</a>
 									<p>WEDDING BANQUEIS</p>
 								</li>
 								<li>
-									<a href="">两人世界</a>
+									<a href="views/hotClassify.html?3">两人世界</a>
 									<p>ROMANTIC DAFES</p>
 								</li>
 								<li>
-									<a href="">烘焙乐趣</a
-										><p>THE J0Y 0F BAEING</p>
+									<a href="views/hotClassify.html?4">烘焙乐趣</a>
+									<p>THE J0Y 0F BAEING</p>
 								</li>
 								<li>
-									<a href="">母婴时光</a>
-									<p>MOM& BABY</p>
+									<a href="views/hotClassify.html?5">母婴时光</a>
+									<p>MOM & BABY</p>
 								</li>
 							</ul>
 							<div class="fr">
 								<img src="img/find1.jpg" alt="">
-								<img src="img/find2.jpg" alt="">
-								<img src="img/find3.jpg" alt="">
-								<img src="img/find4.jpg" alt="">
+								<img src="img/find6.jpg" alt="">
 								<img src="img/find5.jpg" alt="">
-								<img src="img/find6.jpg" alt="">								
+								<img src="img/find4.jpg" alt="">
+								<img src="img/find3.jpg" alt="">
+								<img src="img/find2.jpg" alt="">								
 							</div>
 						</div>
 					</div>
@@ -493,6 +492,7 @@
 							</a>
 						</div>
 					</div>
+					<!-- 服务 -->
 					<div class="service pub_width">
 						<div class="pub_title">
 							<h4>
@@ -570,5 +570,10 @@
 				</div>
 			</footer>
 		</div>
+		<script src="js/encapsulation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

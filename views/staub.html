@@ -11,8 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/staub.css">
-		<script src="../js/encapsulation.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	</head>
 	<body>
 		<div class="wrap">
@@ -43,7 +42,7 @@
 						<!-- 搜索框 -->
 						<div class="nav_search fl">
 							<a href="javascript:;" class="icon icon_search"></a>
-							<div class="search_box">
+							<div class="search_box hidden">
 								<div>
 									<p>
 										<span class="icon icon_search"></span>
@@ -215,47 +214,47 @@
 									<ul class="con_list">
 										<li>
 											<h4>												
-												<a href="hotClassify.html">发现最爱</a>
-											</h4>
-											<ul class="clearfix">
-												<li><a href="#">馈赠佳礼</a></li>
-												<li><a href="#">花嫁婚庆</a></li>
-												<li><a href="#">两人世界</a></li>
-												<li><a href="#">烘焙乐趣</a></li>
-												<li><a href="#">母婴时光</a></li>
-												<li><a href="#">限量收藏</a></li>
-												<li><a href="#">查看全部</a></li>
+												<a href="hotClassify.html?find#1">发现最爱</a>
+											</h4> 
+											<ul class="clearfix hot">
+												<li><a href="hotClassify.html?find#1">馈赠佳礼</a></li>
+												<li><a href="hotClassify.html?find#2">花嫁婚庆</a></li>
+												<li><a href="hotClassify.html?find#3">两人世界</a></li>
+												<li><a href="hotClassify.html?find#4">烘焙乐趣</a></li>
+												<li><a href="hotClassify.html?find#5">母婴时光</a></li>
+												<li><a href="hotClassify.html?find#6">限量收藏</a></li>
+												<li><a href="hotClassify.html?find#1">查看全部</a></li>
 											</ul>
 										</li>
 										<li>
 											<h4>												
-												<a href="hotClassify.html">热销分类</a>
+												<a href="list.html">热销分类</a>
 											</h4>
 											<ul class="clearfix">
-												<li><a href="#">中不锈钢锅具</a></li>
-												<li><a href="#">小家电</a></li>
-												<li><a href="#">铸铁锅</a></li>
-												<li><a href="#">陶瓷</a></li>
-												<li><a href="#">陶瓷</a></li>
-												<li><a href="#">查看全部</a></li>
+												<li><a href="list.html">中不锈钢锅具</a></li>
+												<li><a href="list.html">小家电</a></li>
+												<li><a href="list.html">铸铁锅</a></li>
+												<li><a href="list.html">陶瓷</a></li>
+												<li><a href="list.html">陶瓷</a></li>
+												<li><a href="list.html">查看全部</a></li>
 											</ul>
 										</li>
 										<li>
 											<h4>
-												<a href="hotClassify.html">人气No.1</a>
+												<a href="hotClassify.html?pop#1">人气No.1</a>
 											</h4>
 											<ul class="clearfix">												
 												<li><img src="../img/nav_01.png" ></li>
-												<li><a href="#">查看全部</a></li>
+												<li><a href="hotClassify.html?pop#1">查看全部</a></li>
 											</ul>
 										</li>
 										<li>
 											<h4>												
-												<a href="hotClassify.html">精选套装</a>
+												<a href="hotClassify.html?meal#1">精选套装</a>
 											</h4>
 											<ul class="clearfix">
 												<li><img src="../img/nav_02.jpg" ></li>
-												<li><a href="#">查看全部</a></li>
+												<li><a href="hotClassify.html?meal#1">查看全部</a></li>
 											</ul>
 										</li>
 									</ul>									
@@ -351,14 +350,15 @@
 							<li><a href="#">碗</a></li>							
 						</ul>
 					</div>
-					<ul class="clearfix">
-						<li><a href="#"><img src="../img/s_banner1.jpg" alt=""></a></li>
-						<li><a href="#"><img src="../img/s_banner2.jpg" alt=""></a></li>												
-					</ul>
-					<div class="ban_nav">
-						<span></span>
-						<span></span>
-					</div>					
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="../img/s_banner1.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="../img/s_banner2.jpg" alt=""></div>							
+						</div>
+						<!-- 如果需要分页器 -->
+						<div class="swiper-pagination"></div>
+					</div>
+										
 				</div>	
 				<!-- 内容 -->
 				<div class="main">
@@ -555,5 +555,10 @@
 				</div>
 			</footer>
 		</div>
+		<script src="../js/encapsulation.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/staub.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

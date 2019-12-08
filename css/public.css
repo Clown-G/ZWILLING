@@ -38,10 +38,10 @@
 .wrap header .top div .scroll p {
   position: absolute;
   top: 35px;
-  left: 50%;
+  left: 40%;
 }
 .wrap header .top div .login_info {
-  width: 300px;
+  width: 340px;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -59,6 +59,9 @@
 }
 .wrap header .top div .login_info li a {
   padding: 0 4px;
+}
+.wrap header .top div .login_info .in {
+  width: 140px;
 }
 .wrap header .top div .login_info .in a {
   padding: 0px;
@@ -82,13 +85,13 @@
   margin-left: 15px;
 }
 .wrap header nav .nav_search .search_box {
-  display: none;
   position: absolute;
-  top: 85px;
+  top: 120px;
   left: 0;
   width: 100vw;
   background: rgba(255, 255, 255, 0.5);
   padding: 5px 0px 30px 0px;
+  z-index: 5;
 }
 .wrap header nav .nav_search .search_box div {
   width: 580px;
@@ -331,10 +334,8 @@
 }
 .wrap .content .banner {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  padding-bottom: 50px;
   position: relative;
-  margin-bottom: 50px;
 }
 .wrap .content .banner .sub_nav {
   position: absolute;
@@ -342,6 +343,7 @@
   left: 0px;
   background: rgba(51, 51, 51, 0.6);
   width: 100%;
+  z-index: 9;
 }
 .wrap .content .banner .sub_nav ul {
   padding: 0px 20px;
@@ -366,38 +368,44 @@
   margin-top: 6px;
 }
 .wrap .content .banner > ul {
-  width: 400%;
+  width: 100%;
+  height: 410px;
+  overflow: hidden;
 }
 .wrap .content .banner > ul li {
-  width: 25%;
-  float: left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  opacity: 0;
 }
 .wrap .content .banner > ul li a {
   float: left;
 }
 .wrap .content .banner > ul li a img {
   width: 100%;
-  height: auto;
+  height: 410px;
 }
-.wrap .content .banner .ban_nav {
+.wrap .content .banner .swiper-pagination {
   position: absolute;
   left: 49%;
-  bottom: 75px;
+  bottom: 35px;
 }
-.wrap .content .banner .ban_nav span {
+.wrap .content .banner .swiper-pagination span {
   width: 16px;
   height: 16px;
   background: #cccbc9;
   float: left;
+  border-radius: 0;
   transform: scale(0.5);
 }
-.wrap .content .banner .ban_nav .active {
+.wrap .content .banner .swiper-pagination .swiper-pagination-bullet-active {
   background: #ee1d25;
 }
 .wrap .content .banner .activity {
   position: absolute;
   right: 0px;
-  bottom: -55px;
+  bottom: 0px;
   width: 435px;
   height: 105px;
   z-index: 1;
